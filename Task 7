@@ -1,0 +1,18 @@
+def spin_words(sentence):
+    # Разбиваем предложение на список слов
+    words = sentence.split(" ")
+    result = []
+    
+    # Проходим по каждому слову
+    for word in words:
+        # Если в слове 5 или больше букв
+        if len(word) >= 5:
+            # Переворачиваем слово с помощью срезов [::-1]
+            reversed_word = word[::-1]
+            result.append(reversed_word)
+        else:
+            # Оставляем слово как есть
+            result.append(word)
+            
+    # Собираем все обратно в одну строку через пробел
+    return " ".join(result)
