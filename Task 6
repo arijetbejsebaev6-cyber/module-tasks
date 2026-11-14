@@ -1,0 +1,2 @@
+def accum(s):
+    return "-".join((char * (i + 1)).capitalize() for i, char in enumerate(s))
