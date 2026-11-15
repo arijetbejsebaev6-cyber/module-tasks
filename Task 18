@@ -1,3 +1,5 @@
-def row_sum_odd_numbers(n):
-    # Возводим n в куб (умножаем само на себя три раза)
-    return n * n * n
+def sum_array(a):
+    total = 0
+    for num in a:
+        total += num
+    return total
