@@ -1,0 +1,7 @@
+def get_sum(a, b):
+    total = 0
+    # min() находит меньшее число, max() - большее.
+    # range() не включает последнее число, поэтому прибавляем +1
+    for i in range(min(a, b), max(a, b) + 1):
+        total += i
+    return total
